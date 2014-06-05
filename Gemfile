@@ -7,15 +7,16 @@ gem 'sprockets', '2.11.0'
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
+  gem 'factory_girl_rails', '4.2.1'
 end
+
 group :development do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails','2.13.1'
   gem 'guard-rspec', '2.5.0'
-
 end
 
-group :test, :development do 
+group :test, :development do
 	gem 'minitest'
 end
 
@@ -47,4 +48,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
