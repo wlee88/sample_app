@@ -1,4 +1,6 @@
-require 'spec_helper'
+require "spec_helper"
+require "authentication_helper"
+require "signin_helper"
 
 describe "AuthenticationPages" do
   subject { page }
