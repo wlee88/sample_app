@@ -12,7 +12,7 @@ end
 
 group :development do
   gem 'sqlite3', '1.3.8'
-  gem 'rspec-rails','2.13.1'
+  gem 'rspec-rails'
   gem 'guard-rspec', '2.5.0'
 end
 
@@ -28,17 +28,20 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'bootstrap-will_paginate', '0.0.9'
+
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
-
  gem 'bcrypt', '~> 3.1.7'
+ gem 'faker', '1.1.2'
+
 group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 
 group:test do
-  gem 'cucumber-rails', '1.4.0', :require => false
+#  gem 'cucumber-rails', '1.4.0', :require => false
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
